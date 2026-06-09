@@ -72,7 +72,7 @@ PROJECT_BRIEF.md   Scope, equations, assumptions, and milestones
 ## Reproduce the experiment
 
 ```powershell
-cd G:\in_your_dreams
+cd G:\in_your_dreams\CFC
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -e ".[dev]"

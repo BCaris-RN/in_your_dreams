@@ -36,6 +36,28 @@ The Henry coefficient for each CFC will be adjusted with a Van 't Hoff
 relationship. The implementation must state the Henry-law convention and flux
 sign convention explicitly before literature parameters are entered.
 
+## Core equations
+
+The project uses the solubility-form Henry coefficient
+$H_{cp}=C_{\mathrm{aq}}/p$. Its temperature response is:
+
+$$
+\ln\left(\frac{H_{cp}(T)}{H_{cp}(T_{\mathrm{ref}})}\right)
+= -\frac{\Delta H_{\mathrm{sol}}}{R}
+\left(\frac{1}{T}-\frac{1}{T_{\mathrm{ref}}}\right)
+$$
+
+The non-equilibrium air-sea flux is:
+
+$$
+F_{\mathrm{air\to sea}}
+= k_{\mathrm{gas}}A
+\left[H_{cp}(T,S)p_{\mathrm{air}}-C_{\mathrm{mixed}}\right]
+$$
+
+Positive $F_{\mathrm{air\to sea}}$ denotes ocean uptake. Negative values
+denote ocean-to-atmosphere outgassing.
+
 ## Layout
 
 ```text

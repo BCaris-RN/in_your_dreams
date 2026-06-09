@@ -20,26 +20,44 @@ temperature anomalies over 2016-2025.
 
 ## Governing relationships
 
-For a Henry solubility coefficient `K_H`:
+The model uses the solubility-form Henry coefficient,
+$H_{cp} = C_{\mathrm{aq}}/p$, in units of
+$\mathrm{mol\,m^{-3}\,Pa^{-1}}$.
 
-```text
-ln(K_H(T) / K_H(T_ref))
-    = -(delta_H_sol / R) * (1/T - 1/T_ref)
-```
+The temperature dependence is represented by a local Van 't Hoff
+approximation anchored to the Warner-Weiss seawater solubility at the
+reference temperature:
 
-The sign and value of `delta_H_sol` must match the selected Henry coefficient
-convention and source.
+$$
+\ln\left(\frac{H_{cp}(T)}{H_{cp}(T_{\mathrm{ref}})}\right)
+= -\frac{\Delta H_{\mathrm{sol}}}{R}
+\left(\frac{1}{T}-\frac{1}{T_{\mathrm{ref}}}\right)
+$$
 
-A starting kinetic air-sea flux form is:
+The sign and value of $\Delta H_{\mathrm{sol}}$ use the same solubility
+convention as $H_{cp}$.
 
-```text
-F_air_to_sea = k_gas * area * (K_H(T, S) * p_air - C_mixed)
-```
+The kinetic air-sea flux is:
 
-Positive flux is defined as atmosphere-to-ocean. Outgassing is therefore the
-negative part of this flux. Later refinements may include Schmidt-number
-scaling, wind forcing, sea ice, salinity, and spatially resolved mixed-layer
-properties.
+$$
+F_{\mathrm{air\to sea}}
+= k_{\mathrm{gas}}A
+\left[H_{cp}(T,S)p_{\mathrm{air}}-C_{\mathrm{mixed}}\right]
+$$
+
+Positive $F_{\mathrm{air\to sea}}$ is atmosphere-to-ocean uptake. Outgassing
+is therefore the negative part of this flux.
+
+Exchange between the mixed layer and deep-ocean reservoir is:
+
+$$
+F_{\mathrm{mixed\to deep}}
+= \frac{V_{\mathrm{mixed}}}{\tau_{\mathrm{exchange}}}
+\left(C_{\mathrm{mixed}}-C_{\mathrm{deep}}\right)
+$$
+
+Later refinements may include Schmidt-number scaling, wind forcing, sea ice,
+salinity, and spatially resolved mixed-layer properties.
 
 ## Isolation strategy
 

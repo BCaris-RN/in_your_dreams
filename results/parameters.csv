@@ -1,0 +1,15 @@
+parameter,value,unit,basis
+ocean_area,361000000000000.0,m2,representative global ocean
+mixed_layer_depth,50.0,m,baseline model assumption
+deep_ocean_depth,3650.0,m,representative deep reservoir
+gas_transfer_velocity,30.0,m yr-1,baseline model assumption
+vertical_exchange_timescale,10.0,yr,baseline model assumption
+atmospheric_nudging_timescale,0.08333333333333333,yr,keeps atmosphere tied to NOAA history
+tropospheric_dry_air,1.51e+20,mol,representative tropospheric inventory
+reference_temperature,288.15,K,Van 't Hoff reference
+salinity,35.0,psu,reference seawater
+seawater_density,1025.0,kg m-3,reference seawater
+CFC-11_reference_Hcp,0.00011530337786902453,mol m-3 Pa-1,Warner-Weiss at reference T and S
+CFC-11_effective_dissolution_enthalpy,-33.91094075508974,kJ mol-1,local derivative of Warner-Weiss fit
+CFC-12_reference_Hcp,3.112159778944955e-05,mol m-3 Pa-1,Warner-Weiss at reference T and S
+CFC-12_effective_dissolution_enthalpy,-29.870910975013018,kJ mol-1,local derivative of Warner-Weiss fit

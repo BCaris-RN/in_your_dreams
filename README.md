@@ -1,7 +1,10 @@
 # In Your Dreams
 
 Python project for a non-equilibrium, multi-box kinetic model of CFC-11 and
-CFC-12 exchange between the troposphere and a warming marine mixed layer.
+CFC-12 air-sea exchange between the troposphere and a warming marine mixed
+layer. It combines Warner-Weiss solubility equations, historical NOAA climate
+forcing, paired counterfactual simulations, and parametric sensitivity
+analyses.
 
 ## Scientific question
 

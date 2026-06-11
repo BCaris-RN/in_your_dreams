@@ -1,4 +1,4 @@
-# In Your Dreams
+# CFC Air-Sea Flux Model
 
 Python project for a non-equilibrium, multi-box kinetic model of CFC-11 and
 CFC-12 air-sea exchange between the troposphere and a warming marine mixed
@@ -93,7 +93,7 @@ Generated artifacts are written to `results/`:
 
 ## Nominal result
 
-For 2016-2025 SST anomalies averaging 0.760 °C above the NOAA baseline:
+For 2016-2025 SST anomalies averaging 0.760 deg C above the NOAA baseline:
 
 - CFC-11 flux shifted 0.386 Gg toward the atmosphere, reducing modeled ocean
   uptake by 8.59%.

@@ -1,0 +1,24 @@
+Halogens scenario comparison
+============================
+Cold baseline ocean source: 320.656 molecule cm-3 s-1
+Marine anomaly ocean source: 2192.75 molecule cm-3 s-1
+Ocean-source shift: 583.832%
+Equilibrated OH, cold baseline: 261621.044674 molecule cm-3
+Equilibrated OH, marine anomaly: 328766.097304 molecule cm-3
+Equilibrated OH shift: 25.6650044%
+Equilibrated active Br family, cold baseline: 81696216.4156 molecule cm-3
+Equilibrated active Br family, marine anomaly: 766395938.721 molecule cm-3
+HOBr deposition balance, cold baseline: 929.683573886 deposition vs. 929.683573335 photolytic Br production, molecule cm-3 s-1
+HOBr deposition balance, marine anomaly: 6301.2877843 deposition vs. 6301.28778439 photolytic Br production, molecule cm-3 s-1
+Convergence criterion: every species fractional drift <= 0.0001 per hour
+First sustained convergence, cold baseline: 34.9167 days
+First sustained convergence, marine anomaly: 12.75 days
+Maximum endpoint fractional drift, cold baseline: 2.43777501488e-11 per hour (HOBr)
+Maximum endpoint fractional drift, marine anomaly: 8.14557259231e-11 per hour (HO2)
+Endpoint active Br residual, cold baseline: -5.50982008463e-07 molecule cm-3 s-1
+Endpoint active Br residual, marine anomaly: 8.48949639476e-08 molecule cm-3 s-1
+Steady-state status, cold baseline: reached
+Steady-state status, marine anomaly: reached
+
+Note: source conversion and background HOx loss frequencies are
+prototype scaling assumptions, not validated atmospheric budgets.

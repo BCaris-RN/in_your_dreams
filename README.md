@@ -1,12 +1,14 @@
 # In Your Dreams
 
-This repository contains **two independent Python equation-based applications**
-for atmospheric and climate research:
+This repository contains **three Python equation-based applications** for
+atmospheric and climate research:
 
 1. **CFC air-sea flux model**: attributes changes in CFC-11 and CFC-12 ocean
    uptake to observed sea-surface temperature anomalies.
 2. **Marine halogen box model**: follows CHBr3 oxidation and reactive bromine
    chemistry, including an explicit HOBr deposition and washout sink.
+3. **Coupled biogeochemical engine**: combines both systems with pH,
+   chlorophyll-a, and haline-stratification forcing for Paper 3.
 
 The applications address different scientific questions and use separate
 environments, assumptions, state vectors, and numerical integrations.
@@ -15,6 +17,7 @@ environments, assumptions, state vectors, and numerical integrations.
 | --- | --- | --- |
 | [`CFC/`](CFC/) | How did 2016-2025 SST anomalies alter modeled CFC-11 and CFC-12 air-sea exchange? | Three-reservoir atmosphere, mixed-layer, and deep-ocean ODE model |
 | [`Halogens/`](Halogens/) | How does continuous marine CHBr3 forcing affect reactive bromine and HOx, and when does deposition permit equilibrium? | Six-species stiff chemical box model |
+| [`Coupled_Engine/`](Coupled_Engine/) | How do pH, biology, and salinity stratification jointly alter halogen chemistry and CFC inversion diagnostics? | Unified 17-state implicit Radau integration |
 
 ## Application 1: CFC air-sea flux
 
@@ -160,6 +163,20 @@ HOBr deposition and washout lifetime of approximately 2.78 hours.
 
 See [`Halogens/README.md`](Halogens/README.md) for convergence results,
 assumptions, and reproduction.
+
+## Application 3: Coupled biogeochemical engine
+
+The Paper 3 engine preserves the stiff halogen mechanism and Warner-Weiss CFC
+solubility equations while adding three time-dependent indices:
+
+- pH-scaled aqueous CHBr3 hydrolysis
+- chlorophyll-a-scaled CHBr3 production
+- exponential haline damping of the Wanninkhof transfer velocity
+
+It reports matched-counterfactual matrices for stratification-driven CFC
+inversion discrepancy in Gg and OH-driven methane-lifetime distortion.
+See [`Coupled_Engine/README.md`](Coupled_Engine/README.md) for the state vector,
+units, and output conventions.
 
 ## Reproducibility
 

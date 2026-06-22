@@ -113,36 +113,19 @@ See [`CFC/README.md`](CFC/README.md) for inputs, results, and reproduction.
 
 ### Purpose
 
-The Halogens application is a conceptual marine boundary-layer kinetic box
-model. It integrates:
+The Halogens application is a conceptual marine boundary-layer kinetic box model. It integrates:
 
-$$
-\left[\mathrm{CHBr_3},\ \mathrm{Br},\ \mathrm{BrO},\
-\mathrm{HO_2},\ \mathrm{OH},\ \mathrm{HOBr}\right].
-$$
+$$ \left[\mathrm{CHBr}_3,\ \mathrm{Br},\ \mathrm{BrO},\ \mathrm{HO}_2,\ \mathrm{OH},\ \mathrm{HOBr}\right]. $$
 
 Define:
 
-$$
-L_{\mathrm{CHBr_3}}
-= \left(J_{\mathrm{CHBr_3}}
-+ k_{\mathrm{OH+CHBr_3}}[\mathrm{OH}]
-+ k_{\mathrm{Cl+CHBr_3}}[\mathrm{Cl}]\right)[\mathrm{CHBr_3}],
-$$
+$$ L_{\mathrm{CHBr}_3} = \left(J_{\mathrm{CHBr}_3} + k_{\mathrm{OH}+\mathrm{CHBr}_3}[\mathrm{OH}] + k_{\mathrm{Cl}+\mathrm{CHBr}_3}[\mathrm{Cl}]\right)[\mathrm{CHBr}_3], $$
 
-$$
-R_{\mathrm{BrO}} = k_{\mathrm{Br+O_3}}[\mathrm{Br}][\mathrm{O_3}],
-$$
+$$ R_{\mathrm{BrO}} = k_{\mathrm{Br}+\mathrm{O}_3}[\mathrm{Br}][\mathrm{O}_3], $$
 
-$$
-R_{\mathrm{HOBr}} = k_{\mathrm{BrO+HO_2}}[\mathrm{BrO}][\mathrm{HO_2}],
-$$
+$$ R_{\mathrm{HOBr}} = k_{\mathrm{BrO}+\mathrm{HO}_2}[\mathrm{BrO}][\mathrm{HO}_2], $$
 
-$$
-P_{\mathrm{HOBr}} = J_{\mathrm{HOBr}}[\mathrm{HOBr}],
-\qquad
-D_{\mathrm{HOBr}} = k_{\mathrm{term}}[\mathrm{HOBr}].
-$$
+$$ P_{\mathrm{HOBr}} = J_{\mathrm{HOBr}}[\mathrm{HOBr}], \quad D_{\mathrm{HOBr}} = k_{\mathrm{term}}[\mathrm{HOBr}]. $$
 
 The integrated equations are:
 

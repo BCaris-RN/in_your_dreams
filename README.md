@@ -226,3 +226,9 @@ forecast or inversion systems.
 
 Each application documents its scientific sources and known limitations in
 its own directory.
+
+## Acknowledgements & AI Disclosure Statement
+
+The mathematical formulations, physical mechanisms, and structural code architecture comprising the Coupled Marine Engine Suite were conceived and authored entirely by Brandon W. Caris. 
+
+During the development, compilation, and open-source packaging of this project, Large Language Models (including OpenAI's ChatGPT, Google's Gemini, and Google's NotebookLM) were utilized strictly as computational assistants. These tools were leveraged for LaTeX formatting harmonization, software optimization (stiff solver debugging), and textual proofreading of the accompanying manuscripts. In accordance with international academic integrity guidelines, these models bear no editorial or legal responsibility for the scientific claims or codebase accuracy presented herein.

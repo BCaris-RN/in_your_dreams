@@ -1,3 +1,8 @@
+# ============================================================================
+# Copyright (c) 2026 Brandon W. Caris. All rights reserved.
+# Part of the Coupled Marine Engine Suite (in_your_dreams/Coupled_Engine)
+# Licensed under the MIT Open-Source License.
+# ============================================================================
 """Unified marine biogeochemical box model for Paper 3.
 
 The model combines stiff gas-phase halogen chemistry with time-dependent

@@ -1,3 +1,8 @@
+# ============================================================================
+# Copyright (c) 2026 Brandon W. Caris. All rights reserved.
+# Part of the Coupled Marine Engine Suite (in_your_dreams/Coupled_Engine)
+# Licensed under the MIT Open-Source License.
+# ============================================================================
 """Command-line runner and artifact writer for the coupled engine."""
 
 from __future__ import annotations

@@ -1,7 +1,8 @@
 # ============================================================================
 # Copyright (c) 2026 Brandon W. Caris. All rights reserved.
 # Part of the Coupled Marine Engine Suite (in_your_dreams/Coupled_Engine)
-# Licensed under the MIT Open-Source License.
+# Licensed under CC BY 4.0 with Explicit Academic Citation Mandate.
+# See master LICENSE file at repository root for full terms and string.
 # ============================================================================
 """Unified marine biogeochemical box model for Paper 3.
 

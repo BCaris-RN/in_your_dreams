@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20804280.svg)](https://doi.org/10.5281/zenodo.20804280)****
 # CFC Air-Sea Flux Model
 
 Python project for a non-equilibrium, multi-box kinetic model of CFC-11 and

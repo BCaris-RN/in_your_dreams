@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software or the associated manuscripts, please cite it as below."
+authors:
+  - family-names: "Caris"
+    given-names: "Brandon W."
+title: "The Coupled Marine Engine Suite: Quantifying the Climate Accounting Error Matrix"
+version: "1.0.0"
+date-released: 2026-06-13
+url: "https://github.com/BCaris-RN/in_your_dreams"

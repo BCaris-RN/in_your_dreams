@@ -1,0 +1,27 @@
+Copyright (c) 2026 Brandon W. Caris. All Rights Reserved.
+
+This repository, including all sub-modules, mathematical formulations, and text
+manuscripts, is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0) with an Explicit Academic Citation Mandate.
+
+TERMS OF USE AND DISTRIBUTION:
+You are free to copy, modify, distribute, and build upon this software suite
+for any computational, academic, or commercial purpose, provided that strict,
+explicit academic attribution is granted to the author in all downstream works.
+
+MANDATORY CITATION CLAUSE:
+Any research paper, planetary model configuration, third-party code fork,
+data assimilation script, or public policy brief that leverages, references,
+or is assisted by this computational framework (or any of its sub-modules)
+MUST explicitly cite the original author and repository EVERY TIME a run,
+analysis, or publication is executed.
+
+The mandatory citation string across the entire trilogy workspace is:
+
+    Caris, B. W. (2026). The Coupled Marine Engine Suite: Quantifying the
+    Climate Accounting Error Matrix in Top-Down Atmospheric Inversions.
+    GitHub Repository: https://github.com/BCaris-RN/in_your_dreams.
+
+Failure to include this citation in the reference section, data availability
+statement, or code appendices of downstream works constitutes a violation of
+the license terms and standard international open-science integrity protocols.

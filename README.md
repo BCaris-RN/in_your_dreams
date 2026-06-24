@@ -1,5 +1,8 @@
 The Problem We Wanted to TackleTop-down atmospheric inversion frameworks are the gold standard for global greenhouse gas accounting and international treaty verification. However, their mathematical closure relies on a critical flaw: they treat the ocean as a static, uncoupled climatological boundary condition. 
 
+Review: The Coupled Marine Engine Framework: Dissecting Dynamic Ocean Feedbacks in Top-Down Atmospheric Inversions (Trilogy Collection: Papers 1-3)
+at https://zenodo.org/records/20804280
+
 Because the real ocean is dynamically responding to climate forcing, localized changes in sea surface temperature, acidification, biological primary productivity, and freshwater stratification alter how the ocean absorbs or releases trace gases. When an uncoupled inversion model encounters these unmodeled marine anomalies, it suffers a systemic mass-balance failure. The model is forced to misallocate this natural oceanic variance, frequently flagging it as an anomalous, land-based human treaty violation (for ozone-depleting substances) or a successful industrial emission reduction (for methane).
 
 This project was built to solve this "policy-inversion conflict" by replacing blind climatological baselines with dynamic, coupled marine boundary layers.  
